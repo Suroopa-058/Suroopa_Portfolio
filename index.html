@@ -1067,7 +1067,150 @@ body.light-mode #bg-canvas{opacity:0.15}
 
 <div class="glow-div"></div>
 
-      <div class="proj-card fade-up delay-3" data-cat="3d">
+<!-- =====================================================
+     PROJECTS
+     ===================================================== -->
+<section id="projects">
+  <div class="container">
+    <div class="sec-label fade-up">What I've Built</div>
+    <div class="sec-title fade-up delay-1">Featured <span class="grad">Projects</span></div>
+    <div class="sec-sub fade-up delay-2" style="margin-bottom:40px">Real-world applications built from scratch — full-stack, AI-powered, and production-ready.</div>
+    <div class="proj-filter fade-up delay-3">
+      <button class="pfbtn active" onclick="filterP('all',this)">All</button>
+      <button class="pfbtn" onclick="filterP('fullstack',this)">Full-Stack</button>
+      <button class="pfbtn" onclick="filterP('ai',this)">AI / ML</button>
+      <button class="pfbtn" onclick="filterP('3d',this)">3D / Viz</button>
+    </div>
+    <div class="proj-grid" id="proj-grid">
+
+      <!-- <div class="proj-card fade-up" data-cat="fullstack ai">
+        <div class="proj-thumb">
+          <div class="proj-thumb-bg" style="background:linear-gradient(135deg,#0a1a30,#0d2545)"></div>
+          <span class="proj-thumb-emoji">🏥</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-type">Full-Stack · AI-Powered</div>
+          <div class="proj-name">Medical Expense &amp; Health Insurance Claim Analyzer</div>
+          <div class="proj-desc">AI-powered healthcare platform for lab discovery, appointment booking, medical report analysis, and video consultation. Integrated Groq (Llama 3) LLM API for intelligent chatbot and report summarization.</div>
+          <div class="proj-stack">
+            <span class="pstag">React.js</span><span class="pstag">Spring Boot</span><span class="pstag">Groq API</span><span class="pstag">MySQL</span><span class="pstag">WebRTC</span><span class="pstag">JWT</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/Suroopa-058/MediMatch-MiniProject" target="_blank" class="plink plink-gh">🐙 GitHub</a>
+            <a href="https://medi-match-mini-project.vercel.app/" class="plink plink-live">🚀 Live Demo</a>
+          </div>
+        </div>
+      </div> --> <div class="proj-card fade-up" data-cat="fullstack ai">
+
+ <div class="proj-thumb">
+    <img src="images/medimatch.png" 
+         class="proj-preview-img"
+         alt="Medical Expense Health Insurance Claim Analyzer">
+</div>
+
+  <div class="proj-body">
+
+    <div class="proj-type">
+      Full-Stack · AI-Powered
+    </div>
+
+    <div class="proj-name">
+      Medical Expense &amp; Health Insurance Claim Analyzer
+    </div>
+
+    <div class="proj-desc">
+      AI-powered healthcare platform for lab discovery, appointment booking,
+      medical report analysis, and video consultation. Integrated Groq (Llama 3)
+      LLM API for intelligent chatbot and report summarization.
+    </div>
+
+    <div class="proj-stack">
+      <span class="pstag">React.js</span>
+      <span class="pstag">Spring Boot</span>
+      <span class="pstag">Groq API</span>
+      <span class="pstag">MySQL</span>
+      <span class="pstag">WebRTC</span>
+      <span class="pstag">JWT</span>
+    </div>
+
+    <div class="proj-links">
+      <a href="https://github.com/Suroopa-058/MediMatch-MiniProject"
+         target="_blank"
+         class="plink plink-gh">
+         🐙 GitHub
+      </a>
+
+      <a href="https://medi-match-mini-project.vercel.app/"
+         target="_blank"
+         class="plink plink-live">
+         🚀 Live Demo
+      </a>
+    </div>
+
+  </div>
+      
+<!-- 
+      <div class="proj-card fade-up delay-1" data-cat="fullstack">
+        <div class="proj-thumb">
+          <div class="proj-thumb-bg" style="background:linear-gradient(135deg,#1a0a30,#2d1060)"></div>
+          <span class="proj-thumb-emoji">🔐</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-type">Full-Stack · Enterprise</div>
+          <div class="proj-name">Lab Resource Management System</div>
+          <div class="proj-desc">Enterprise-grade system for managing lab resources, equipment bookings, and user roles. Built with Spring Boot backend, JWT-secured REST APIs, and a React dashboard with real-time updates.</div>
+          <div class="proj-stack">
+            <span class="pstag">Spring Boot</span><span class="pstag">React.js</span><span class="pstag">JWT Auth</span><span class="pstag">MySQL</span><span class="pstag">REST API</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com" target="_blank" class="plink plink-gh">🐙 GitHub</a>
+            <a href="#" class="plink plink-live">🚀 Live Demo</a>
+          </div>
+        </div>
+      </div> -->
+     
+
+</div>
+      <div class="proj-card fade-up delay-2" data-cat="fullstack">
+        <div class="proj-thumb">
+    <img src="images/embercrust.png"
+         alt="EmberCrust Online Pizza Ordering App"
+         class="proj-preview-img">
+</div>
+        <div class="proj-body">
+          <div class="proj-type">Full-Stack · E-Commerce</div>
+          <div class="proj-name">EmberCrust — Online Pizza Ordering App</div>
+          <div class="proj-desc">Production-ready pizza ordering platform with cart, checkout, authentication, and Razorpay payment integration. Built REST APIs and optimized the responsive UI for seamless ordering experience.</div>
+          <div class="proj-stack">
+            <span class="pstag">React.js</span><span class="pstag">Node.js</span><span class="pstag">MongoDB</span><span class="pstag">Razorpay</span><span class="pstag">Express.js</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/Suroopa-058/OIBSIP-EmberCrust-Pizza-App" target="_blank" class="plink plink-gh">🐙 GitHub</a>
+            <a href="#" class="plink plink-live">🚀 Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="proj-card fade-up delay-3" data-cat="ai">
+        <div class="proj-thumb">
+          <div class="proj-thumb-bg" style="background:linear-gradient(135deg,#1a1a0a,#30280a)"></div>
+          <span class="proj-thumb-emoji">🎓</span>
+        </div>
+         <div class="proj-body">
+          <div class="proj-type">AI / Machine Learning</div>
+          <div class="proj-name">Scholarship Recommendation System</div>
+          <div class="proj-desc">ML-powered platform that recommends scholarships to students based on academic performance, income, caste, and eligibility criteria using classification algorithms and a Python backend.</div>
+          <div class="proj-stack">
+            <span class="pstag">Python</span><span class="pstag">Machine Learning</span><span class="pstag">Scikit-learn</span><span class="pstag">Pandas</span><span class="pstag">Flask</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com" target="_blank" class="plink plink-gh">🐙 GitHub</a>
+            <a href="#" class="plink plink-live">🚀 Demo</a>
+          </div>
+        </div>
+      </div> --> 
+
+           <div class="proj-card fade-up delay-3" data-cat="3d">
 
         <div class="proj-thumb">
           <img src="images/3d-archviz.png"
@@ -1113,6 +1256,10 @@ body.light-mode #bg-canvas{opacity:0.15}
         </div>
 
       </div>
+
+</section>
+
+<div class="glow-div"></div>
 
 <!-- =====================================================
      CERTIFICATIONS
